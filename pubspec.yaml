@@ -1,0 +1,55 @@
+name: pro_sport
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/legs/back_squat.jpg
+    - assets/legs/front_squat.jpg
+    - assets/legs/leg_extensions.jpeg
+    - assets/legs/leg_press.jpg
+    
+    - assets/back_abs/crunches.jpg
+    - assets/back_abs/deadlift.jpg
+    - assets/back_abs/lat_pulldown.jpg
+    - assets/back_abs/seated_cable_rows.jpg
+
+    - assets/arm/barbell_curl.jpg
+    - assets/arm/hammer_curl.jpg
+    - assets/arm/overhead_tricep.jpg
+    - assets/arm/tricep_pushdown.jpg
+
+    - assets/chest/barbell_bench.jpg
+    - assets/chest/cable_fly.jpg
+    - assets/chest/incline_barbell_bench.jpg
+    - assets/chest/machine_chest_fly.jpg
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/logo/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.png"
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.png"
