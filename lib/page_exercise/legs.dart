@@ -47,7 +47,7 @@ class LegsPage extends StatelessWidget {
                     onTap: () {
                        Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: '',)),
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Back Squat',  imagePath: 'assets/legs/back_squat.jpg', )),
             );
                     },
                     child: ClipRRect(
@@ -85,7 +85,10 @@ class LegsPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Front Squat',imagePath: 'assets/legs/front_squat.jpg',)),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -122,7 +125,10 @@ class LegsPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Leg Extensions',imagePath: 'assets/legs/leg_extensions.jpeg',)),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -159,7 +165,10 @@ class LegsPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Leg Press',imagePath: 'assets/legs/leg_press.jpg',)),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),

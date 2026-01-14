@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro_sport/page/detail_exercise.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,7 +45,10 @@ class BackAbs extends StatelessWidget {
                   SizedBox(height: 50),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                       Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Lat Pulldown',  imagePath: 'assets/back_abs/lat_pulldown.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -81,7 +85,10 @@ class BackAbs extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                       Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Seated Cable Rows',  imagePath: 'assets/back_abs/seated_cable_rows.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -118,7 +125,10 @@ class BackAbs extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                     Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Deadlift',  imagePath: 'assets/back_abs/deadlift.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -155,7 +165,10 @@ class BackAbs extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Crunches',  imagePath: 'assets/back_abs/crunches.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),

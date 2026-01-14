@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro_sport/page/detail_exercise.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ChestPage(), // Устанавливаем новую страницу "legs"
+      home: ChestPage(), 
     );
   }
 }
@@ -44,7 +45,10 @@ class ChestPage extends StatelessWidget {
                   SizedBox(height: 50),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Barbell Bench',  imagePath: 'assets/chest/barbell_bench.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -81,7 +85,10 @@ class ChestPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                    Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Incline Barbell Bench',  imagePath: 'assets/chest/incline_barbell_bench.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -118,7 +125,10 @@ class ChestPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Machine Chest Fly',  imagePath: 'assets/chest/machine_chest_fly.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -155,7 +165,10 @@ class ChestPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Cable Fly',  imagePath: 'assets/chest/cable_fly.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),

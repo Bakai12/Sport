@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pro_sport/page/detail_exercise.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ArmPage(), // Устанавливаем новую страницу "legs"
+      home: ArmPage(), 
     );
   }
 }
@@ -44,7 +45,10 @@ class ArmPage extends StatelessWidget {
                   SizedBox(height: 50),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Hammer Curl',  imagePath: 'assets/arm/hammer_curl.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -81,7 +85,10 @@ class ArmPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Barbell Curl',  imagePath: 'assets/arm/barbell_curl.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -118,7 +125,10 @@ class ArmPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Tricep Pushdown',  imagePath: 'assets/arm/tricep_pushdown.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
@@ -155,7 +165,10 @@ class ArmPage extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      // Действие при нажатии
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExercisePage(exerciseName: 'Overhead Tricep',  imagePath: 'assets/arm/overhead_tricep.jpg', )),
+            );
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),

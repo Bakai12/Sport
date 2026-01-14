@@ -1,0 +1,2 @@
+C:/Project flutter/Sport/android/app/.cxx/Debug/3q56664h/x86/CMakeFiles/edit_cache.dir
+C:/Project flutter/Sport/android/app/.cxx/Debug/3q56664h/x86/CMakeFiles/rebuild_cache.dir
